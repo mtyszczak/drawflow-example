@@ -1,0 +1,127 @@
+#drawflow {
+  background: var(--dfBackgroundColor);
+  background-size: var(--dfBackgroundSize) var(--dfBackgroundSize);
+  background-image: var(--dfBackgroundImage);
+}
+
+.drawflow {
+  /*
+   * Make sure .drawflow height is greater than 0, otherwise it results in an calculation error:
+   * dividing by 0: NaN and users can't move nodes in the y axis and draw paths
+   */
+  min-height: 100%;
+  height: auto;
+
+  .drawflow-node {
+    display: var(--dfNodeType);
+    background: var(--dfNodeBackgroundColor);
+    color: var(--dfNodeTextColor);
+    border: var(--dfNodeBorderSize)  solid var(--dfNodeBorderColor);
+    border-radius: var(--dfNodeBorderRadius);
+    min-height: var(--dfNodeMinHeight);
+    width: auto;
+    min-width: var(--dfNodeMinWidth);
+    padding-top: var(--dfNodePaddingTop);
+    padding-bottom: var(--dfNodePaddingBottom);
+    -webkit-box-shadow: var(--dfNodeBoxShadowHL) var(--dfNodeBoxShadowVL) var(--dfNodeBoxShadowBR) var(--dfNodeBoxShadowS) var(--dfNodeBoxShadowColor);
+    box-shadow:  var(--dfNodeBoxShadowHL) var(--dfNodeBoxShadowVL) var(--dfNodeBoxShadowBR) var(--dfNodeBoxShadowS) var(--dfNodeBoxShadowColor);
+
+    &:hover {
+      background: var(--dfNodeHoverBackgroundColor);
+      color: var(--dfNodeHoverTextColor);
+      border: var(--dfNodeHoverBorderSize)  solid var(--dfNodeHoverBorderColor);
+      border-radius: var(--dfNodeHoverBorderRadius);
+      -webkit-box-shadow: var(--dfNodeHoverBoxShadowHL) var(--dfNodeHoverBoxShadowVL) var(--dfNodeHoverBoxShadowBR) var(--dfNodeHoverBoxShadowS) var(--dfNodeHoverBoxShadowColor);
+      box-shadow:  var(--dfNodeHoverBoxShadowHL) var(--dfNodeHoverBoxShadowVL) var(--dfNodeHoverBoxShadowBR) var(--dfNodeHoverBoxShadowS) var(--dfNodeHoverBoxShadowColor);
+    }
+
+    &.selected {
+      background: var(--dfNodeSelectedBackgroundColor);
+      color: var(--dfNodeSelectedTextColor);
+      border: var(--dfNodeSelectedBorderSize)  solid var(--dfNodeSelectedBorderColor);
+      border-radius: var(--dfNodeSelectedBorderRadius);
+      -webkit-box-shadow: var(--dfNodeSelectedBoxShadowHL) var(--dfNodeSelectedBoxShadowVL) var(--dfNodeSelectedBoxShadowBR) var(--dfNodeSelectedBoxShadowS) var(--dfNodeSelectedBoxShadowColor);
+      box-shadow:  var(--dfNodeSelectedBoxShadowHL) var(--dfNodeSelectedBoxShadowVL) var(--dfNodeSelectedBoxShadowBR) var(--dfNodeSelectedBoxShadowS) var(--dfNodeSelectedBoxShadowColor);
+    }
+
+    .input {
+      left: var(--dfInputLeft);
+      background: var(--dfInputBackgroundColor);
+      border: var(--dfInputBorderSize)  solid var(--dfInputBorderColor);
+      border-radius: var(--dfInputBorderRadius);
+      height: var(--dfInputHeight);
+      width: var(--dfInputWidth);
+
+      &:hover {
+        background: var(--dfInputHoverBackgroundColor);
+        border: var(--dfInputHoverBorderSize)  solid var(--dfInputHoverBorderColor);
+        border-radius: var(--dfInputHoverBorderRadius);
+      }
+    }
+
+    .outputs {
+      float: var(--dfNodeTypeFloat);
+    }
+
+    .output {
+      right: var(--dfOutputRight);
+      background: var(--dfOutputBackgroundColor);
+      border: var(--dfOutputBorderSize)  solid var(--dfOutputBorderColor);
+      border-radius: var(--dfOutputBorderRadius);
+      height: var(--dfOutputHeight);
+      width: var(--dfOutputWidth);
+
+      &:hover {
+        background: var(--dfOutputHoverBackgroundColor);
+        border: var(--dfOutputHoverBorderSize)  solid var(--dfOutputHoverBorderColor);
+        border-radius: var(--dfOutputHoverBorderRadius);
+      }
+    }
+  }
+
+  .connection {
+    .main-path {
+      stroke-width: var(--dfLineWidth);
+      stroke: var(--dfLineColor);
+
+      &:hover {
+        stroke: var(--dfLineHoverColor);
+      }
+
+      &.selected {
+        stroke: var(--dfLineSelectedColor);
+      }
+    }
+
+    .point {
+      stroke: var(--dfRerouteBorderColor);
+      stroke-width: var(--dfRerouteBorderWidth);
+      fill: var(--dfRerouteBackgroundColor);
+
+      &:hover {
+        stroke: var(--dfRerouteHoverBorderColor);
+        stroke-width: var(--dfRerouteHoverBorderWidth);
+        fill: var(--dfRerouteHoverBackgroundColor);
+      }
+    }
+  }
+}
+
+.drawflow-delete {
+  display: var(--dfDeleteDisplay);
+  color: var(--dfDeleteColor);
+  background: var(--dfDeleteBackgroundColor);
+  border: var(--dfDeleteBorderSize) solid var(--dfDeleteBorderColor);
+  border-radius: var(--dfDeleteBorderRadius);
+
+  &:hover {
+    color: var(--dfDeleteHoverColor);
+    background: var(--dfDeleteHoverBackgroundColor);
+    border: var(--dfDeleteHoverBorderSize) solid var(--dfDeleteHoverBorderColor);
+    border-radius: var(--dfDeleteHoverBorderRadius);
+  }
+}
+
+.parent-node .drawflow-delete {
+  top: var(--dfDeleteTop);
+}

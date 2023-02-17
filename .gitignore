@@ -1,0 +1,48 @@
+# MacOS store
+.DS_Store
+
+# Dependency directories
+node_modules/
+
+# Compiled output
+dist/
+
+# Nuxt.js generated files
+.nuxt/
+
+# Environment variables file
+.env
+.env.*
+!.env.template
+
+# Coverage directory used by Jest
+coverage/
+
+# PWA files
+sw.*
+
+# ESLint cache
+.eslintcache
+
+# Logs
+./logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# IDEs and editors
+.idea/
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode
+.vscode/*
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json

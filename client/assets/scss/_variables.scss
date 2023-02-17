@@ -1,0 +1,99 @@
+:root {
+  --dfBackgroundColor: #ffffff;
+  --dfBackgroundSize: 9px;
+  --dfBackgroundImage: linear-gradient(to right, rgba(0, 0, 0, 0.08) 1px, transparent 1px), linear-gradient(to bottom, rgba(0, 0, 0, 0.08) 1px, transparent 1px);
+
+  --dfNodeType: flex;
+  --dfNodeTypeFloat: none;
+  --dfNodeBackgroundColor: #ffffff;
+  --dfNodeTextColor: #000000;
+  --dfNodeBorderSize: 1px;
+  --dfNodeBorderColor: #000000;
+  --dfNodeBorderRadius: 4px;
+  --dfNodeMinHeight: 40px;
+  --dfNodeMinWidth: 160px;
+  --dfNodePaddingTop: 15px;
+  --dfNodePaddingBottom: 15px;
+  --dfNodeBoxShadowHL: 0px;
+  --dfNodeBoxShadowVL: 2px;
+  --dfNodeBoxShadowBR: 11px;
+  --dfNodeBoxShadowS: 2px;
+  --dfNodeBoxShadowColor: rgba(0, 0, 0, 0.72);
+
+  --dfNodeHoverBackgroundColor: #ffffff;
+  --dfNodeHoverTextColor: #000000;
+  --dfNodeHoverBorderSize: 1px;
+  --dfNodeHoverBorderColor: #000000;
+  --dfNodeHoverBorderRadius: 4px;
+
+  --dfNodeHoverBoxShadowHL: 0px;
+  --dfNodeHoverBoxShadowVL: 2px;
+  --dfNodeHoverBoxShadowBR: 11px;
+  --dfNodeHoverBoxShadowS: 4px;
+  --dfNodeHoverBoxShadowColor: rgba(0, 0, 0, 0.72);
+
+  --dfNodeSelectedBackgroundColor: rgba(255, 255, 255, 1);
+  --dfNodeSelectedTextColor: rgba(0, 0, 0, 1);
+  --dfNodeSelectedBorderSize: 1px;
+  --dfNodeSelectedBorderColor: #000000;
+  --dfNodeSelectedBorderRadius: 4px;
+
+  --dfNodeSelectedBoxShadowHL: 0px;
+  --dfNodeSelectedBoxShadowVL: 2px;
+  --dfNodeSelectedBoxShadowBR: 15px;
+  --dfNodeSelectedBoxShadowS: 6px;
+  --dfNodeSelectedBoxShadowColor: rgba(0, 0, 0, 0.72);
+
+  --dfInputBackgroundColor: #ffffff;
+  --dfInputBorderSize: 2px;
+  --dfInputBorderColor: #000000;
+  --dfInputBorderRadius: 50px;
+  --dfInputLeft: -22px;
+  --dfInputHeight: 10px;
+  --dfInputWidth: 10px;
+
+  --dfInputHoverBackgroundColor: #ffffff;
+  --dfInputHoverBorderSize: 2px;
+  --dfInputHoverBorderColor: #000000;
+  --dfInputHoverBorderRadius: 50px;
+
+  --dfOutputBackgroundColor: #ffffff;
+  --dfOutputBorderSize: 2px;
+  --dfOutputBorderColor: #000000;
+  --dfOutputBorderRadius: 50px;
+  --dfOutputRight: -9px;
+  --dfOutputHeight: 10px;
+  --dfOutputWidth: 10px;
+
+  --dfOutputHoverBackgroundColor: #ffffff;
+  --dfOutputHoverBorderSize: 2px;
+  --dfOutputHoverBorderColor: #000000;
+  --dfOutputHoverBorderRadius: 50px;
+
+  --dfLineWidth: 5px;
+  --dfLineColor: #4682b4;
+  --dfLineHoverColor: #4682b4;
+  --dfLineSelectedColor: rgba(67, 175, 185, 1);
+
+  --dfRerouteBorderWidth: 2px;
+  --dfRerouteBorderColor: #000000;
+  --dfRerouteBackgroundColor: #ffffff;
+
+  --dfRerouteHoverBorderWidth: 2px;
+  --dfRerouteHoverBorderColor: #000000;
+  --dfRerouteHoverBackgroundColor: #ffffff;
+
+  --dfDeleteDisplay: block;
+  --dfDeleteColor: #ffffff;
+  --dfDeleteBackgroundColor: #000000;
+  --dfDeleteBorderSize: 2px;
+  --dfDeleteBorderColor: #ffffff;
+  --dfDeleteBorderRadius: 50px;
+  --dfDeleteTop: -15px;
+
+  --dfDeleteHoverColor: #000000;
+  --dfDeleteHoverBackgroundColor: #ffffff;
+  --dfDeleteHoverBorderSize: 2px;
+  --dfDeleteHoverBorderColor: #000000;
+  --dfDeleteHoverBorderRadius: 50px;
+}
